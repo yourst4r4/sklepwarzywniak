@@ -1,0 +1,52 @@
+﻿
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 100">
+
+    <g fill="none" stroke="#0A3323"
+       stroke-width="2.2"
+       stroke-linecap="round"
+       stroke-linejoin="round">
+
+        <!-- Lewa linia -->
+        <path d="M0 45
+      C100 43 160 40 230 43
+      S350 48 420 54
+      S490 65 535 52"/>
+
+        <!-- Prawa linia -->
+        <path d="M665 52
+      C710 65 780 48 850 43
+      S970 40 1040 43
+      S1140 43 1200 45"/>
+
+        <!-- Centralny kwiat -->
+        <path d="
+      M600 49
+      C582 35 568 43 580 55
+      C588 63 597 55 600 49
+      C603 55 612 63 620 55
+      C632 43 618 35 600 49
+      C614 36 607 24 600 25
+      C593 24 586 36 600 49
+      C586 62 593 74 600 73
+      C607 74 614 62 600 49Z
+    "/>
+
+        <!-- Środek kwiatu -->
+        <circle cx="600" cy="49" r="4"/>
+
+        <!-- Delikatne zawijasy przy kwiecie -->
+        <path d="M535 52 C545 35 560 37 562 47
+      C564 55 552 58 550 50"/>
+
+        <path d="M665 52 C655 35 640 37 638 47
+      C636 55 648 58 650 50"/>
+
+    </g>
+
+    <g fill="#839958">
+        <circle cx="570" cy="43" r="2"/>
+        <circle cx="630" cy="43" r="2"/>
+    </g>
+
+</svg>
