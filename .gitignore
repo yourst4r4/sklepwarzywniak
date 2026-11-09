@@ -1,0 +1,11 @@
+﻿# Node / React
+client-app/node_modules/
+client-app/dist/
+
+# .NET / C#
+**/bin/
+**/obj/
+
+# IDE
+.idea/
+*.user
