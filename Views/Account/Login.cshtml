@@ -1,26 +1,67 @@
 @model Warzywniak.ViewModels.LoginViewModel
 
-<h2>Logowanie</h2>
+@{
+    ViewData["Title"] = "Logowanie";
+}
 
-<form asp-action="Login" method="post">
+@section Styles {
+    <link rel="stylesheet" href="~/css/account.css" asp-append-version="true" />
+}
 
-    <div asp-validation-summary="ModelOnly"></div>
+<div class="account-page">
+    <div class="account-card">
 
-    <div>
-        <label asp-for="Login">Login lub email</label>
-        <input asp-for="Login" />
-        <span asp-validation-for="Login"></span>
+        <h1>Witaj ponownie!</h1>
+
+        <p class="account-subtitle">
+            Zaloguj się i wróć do swojego Warzywniaka.
+        </p>
+
+        <form asp-controller="Account"
+              asp-action="Login"
+              method="post">
+
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly"
+                 class="validation-errors"></div>
+
+            <div class="form-group">
+                <label asp-for="Login">Login lub e-mail</label>
+                <input asp-for="Login"
+                       class="form-control"
+                       placeholder="Twój login lub adres e-mail"
+                       autocomplete="username" />
+                <span asp-validation-for="Login"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Hasło</label>
+                <input asp-for="Password"
+                       type="password"
+                       class="form-control"
+                       placeholder="Twoje hasło"
+                       autocomplete="current-password" />
+                <span asp-validation-for="Password"
+                      class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="account-button">
+                Zaloguj się
+            </button>
+        </form>
+
+        <p class="account-switch">
+            Nie masz jeszcze konta?
+            <a asp-controller="Account" asp-action="Register">
+                Zarejestruj się
+            </a>
+        </p>
+
     </div>
+</div>
 
-    <div>
-        <label asp-for="Password">Hasło</label>
-        <input asp-for="Password" type="password" />
-        <span asp-validation-for="Password"></span>
-    </div>
-
-    <button type="submit">Zaloguj się</button>
-
-</form>
-
-
-<a asp-action="Register">Nie masz konta? Zarejestruj się</a>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

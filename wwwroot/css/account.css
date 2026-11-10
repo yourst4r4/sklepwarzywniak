@@ -1,0 +1,128 @@
+﻿.account-page {
+    padding: 25px 15px 45px;
+    color: #0A3323;
+}
+
+.account-card {
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 30px 35px;
+    background: rgba(247, 244, 213, 0.85);
+    border: 1px solid rgba(131, 153, 88, 0.35);
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(10, 51, 35, 0.08);
+}
+
+/*naglowki*/
+
+.account-card h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #0A3323;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.account-subtitle {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/*pola formularza*/
+
+.account-card .form-group {
+    margin-bottom: 20px;
+}
+
+.account-card label {
+    display: block;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #0A3323;
+}
+
+.account-card .form-control {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #839958;
+    border-radius: 8px;
+    background: #fffdf0;
+    color: #0A3323;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
+}
+
+.account-card .form-control:focus {
+    border-color: #105666;
+    box-shadow: 0 0 0 3px rgba(131, 153, 88, 0.2);
+    outline: none;
+}
+
+/*przycisk*/
+
+.account-button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: #839958;
+    border: 1px solid #0A3323;
+    border-radius: 8px;
+    color: #F7F4D5;
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.account-button:hover {
+    background: #0A3323;
+}
+
+/*linki*/
+
+.account-switch {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+.account-switch a {
+    color: #105666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.account-switch a:hover {
+    text-decoration: underline;
+}
+
+/*walidacja*/
+
+.validation-errors,
+.account-card .text-danger {
+    color: #a33b42 !important;
+    font-size: 0.8rem;
+}
+
+.validation-errors ul {
+    padding-left: 20px;
+}
+
+/*tel*/
+
+@media (max-width: 576px) {
+    .account-card {
+        padding: 25px 18px;
+    }
+
+    .account-card h1 {
+        font-size: 3rem;
+    }
+}

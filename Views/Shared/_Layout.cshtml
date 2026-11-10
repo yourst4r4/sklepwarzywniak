@@ -173,19 +173,61 @@
 
                 <!--prawa str menu-->
 
+                
+                <!-- prawa strona menu -->
+
                 <div class="header-profile">
 
-                    <a class="btn btn-outline-dark d-flex align-items-center gap-2"
-                       asp-controller="Account"
-                       asp-action="Index"
-                       title="Profil">
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <div class="dropdown">
 
-                        <i class="bi bi-person-fill fs-5"></i>
-                        <span>Profil</span>
+                            <button class="btn btn-outline-dark d-flex align-items-center gap-2 dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
 
-                    </a>
+                                <i class="bi bi-person-fill fs-5"></i>
+                                <span>@User.Identity.Name</span>
+
+                            </button>
+
+                            <ul class="dropdown-menu dropdown-menu-end shadow mt-2">
+
+                                <li>
+                                    <form asp-controller="Account"
+                                          asp-action="Logout"
+                                          method="post">
+
+                                        @Html.AntiForgeryToken()
+
+                                        <button type="submit" class="dropdown-item py-2">
+                                            <i class="bi bi-box-arrow-right me-2"></i>
+                                            Wyloguj się
+                                        </button>
+
+                                    </form>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    }
+                    else
+                    {
+                        <a class="btn btn-outline-dark d-flex align-items-center gap-2"
+                           asp-controller="Account"
+                           asp-action="Login"
+                           title="Profil">
+
+                            <i class="bi bi-person-fill fs-5"></i>
+                            <span>Profil</span>
+
+                        </a>
+                    }
 
                 </div>
+
 
             </div>
 
