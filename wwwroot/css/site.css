@@ -6,6 +6,8 @@
     --color-teal: #105666;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 /* body tlo*/
 
 body {
@@ -261,4 +263,55 @@ header .dropdown-item:focus {
     .footer-counter {
         font-size: 0.85rem;
     }
+}
+
+/*czionki, zwykly tekst i naglowek*/
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    color: #0A3323;
+}
+
+/* Romantyczne nagłówki */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Parisienne', cursive;
+    color: #0A3323;
+    font-weight: 400;
+}
+
+
+/*czcionki menu i stopki */
+
+/*przyciski*/
+header .btn {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/*elementy rozwijanego menu*/
+header .dropdown-menu .dropdown-item {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/*napisy w stopce*/
+.site-footer {
+    font-family: 'Parisienne', cursive;
+    font-size: 1.3rem;
+    color: #0A3323;
+}
+
+/*linki w stopce*/
+.site-footer a {
+    font-family: 'Parisienne', cursive;
+    color: #0A3323;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+/*licznik odwiedzin*/
+.site-footer .visitor-counter {
+    font-family: 'Libre Baskerville', serif;
 }
