@@ -1,8 +1,269 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewData["Title"] = "Warzywniak";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+}
+
+<div class="home-page">
+
+    <div class="home-intro">
+        <h1>.✦ ݁˖ Witaj w Warzywniaku! .✦ ݁˖</h1>
+        <p>°❀⋆.ೃ࿔*:･ Odkrywaj smaki z różnych zakątków świata °❀⋆.ೃ࿔*:･</p>
     </div>
+
+    @*polskie produkty *@
+    <section class="product-section">
+        <div class="section-heading">
+            <h2>-`♡´- Polskie owoce i warzywa -`♡´-</h2>
+             <span class="category-arrow" title="Cała kategoria – wkrótce">→</span>
+    </div>
+
+    <div class="slider-wrapper">
+        <button class="slider-button prev" aria-label="Poprzednie produkty">‹</button>
+
+        <div class="product-slider">
+
+            <div class="product-card">
+                <div class="product-image-box">
+                    <img src="~/images/94c1368ea9c50327819dc40aa35e7aed-pomidor-bekas.jpg" alt="Pomidor" class="product-image">
+                    <img src="~/images/pomidor_162399647.jpg" alt="Pomidor – drugie zdjęcie" class="product-image second-image">
+                    <div class="product-description">
+                        <p>Soczysty, czerwony pomidor – idealny do sałatek i domowych przetworów.</p>
+                        <button class="image-switch" aria-label="Zmień zdjęcie">→</button>
+                    </div>
+                </div>
+                <h3>Pomidor</h3>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-box">
+                    <img src="~/images/538a8e3623f6638b98ac9c3257bf2be1_zieleniak-kapusta-biala.jpg" alt="Kapusta" class="product-image">
+                    <img src="~/images/kapusta-biala-600x600.jpg" alt="Kapusta – drugie zdjęcie" class="product-image second-image">
+                    <div class="product-description">
+                        <p>Świeża kapusta, doskonała do surówek, zup i tradycyjnych potraw.</p>
+                        <button class="image-switch" aria-label="Zmień zdjęcie">→</button>
+                    </div>
+                </div>
+                <h3>Kapusta</h3>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-box">
+                    <img src="~/images/535.jpg" alt="Truskawka" class="product-image">
+                    <img src="~/images/images.jpg" alt="Truskawka – drugie zdjęcie" class="product-image second-image">
+                    <div class="product-description">
+                        <p>Słodkie, aromatyczne truskawki – smak polskiego lata.</p>
+                        <button class="image-switch" aria-label="Zmień zdjęcie">→</button>
+                    </div>
+                </div>
+                <h3>Truskawka</h3>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-box">
+                    <img src="~/images/marchewka.jpg" alt="Marchew" class="product-image">
+                    <img src="~/images/mloda-marchewka.jpg" alt="Marchew – drugie zdjęcie" class="product-image second-image">
+                    <div class="product-description">
+                        <p>Chrupiąca marchew pełna naturalnej słodyczy.</p>
+                        <button class="image-switch" aria-label="Zmień zdjęcie">→</button>
+                    </div>
+                </div>
+                <h3>Marchew</h3>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-box">
+                    <img src="~/images/jabko.jpg" alt="Jabłko" class="product-image">
+                    <img src="~/images/jabluszko.jpg" alt="Jabłko – drugie zdjęcie" class="product-image second-image">
+                    <div class="product-description">
+                        <p>Klasyczne polskie jabłko – chrupiące, soczyste i pełne smaku.</p>
+                        <button class="image-switch" aria-label="Zmień zdjęcie">→</button>
+                    </div>
+                </div>
+                <h3>Jabłko</h3>
+            </div>
+
+        </div>
+
+        <button class="slider-button next" aria-label="Następne produkty">›</button>
+    </div>
+</section>
+
+    @*afrykanskie produkty *@
+    <section class="product-section">
+        <div class="section-heading">
+            <h2>𖦹 ݁ ˖ Afrykańskie owoce i warzywa 𖦹 ݁ ˖</h2>
+            <span class="category-arrow" title="Cała kategoria – wkrótce">→</span>
+        </div>
+
+        <div class="slider-wrapper">
+            <button class="slider-button prev" aria-label="Poprzednie produkty">‹</button>
+
+            <div class="product-slider">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=500" alt="Mango">
+                    <h3>Mango</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517282009859-f000ec3b26fe?w=500" alt="Papaja">
+                    <h3>Papaja</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1527325678964-54921661f888?w=500" alt="Awokado">
+                    <h3>Awokado</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=500" alt="Ananas">
+                    <h3>Ananas</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=500" alt="Pomarańcze">
+                    <h3>Pomarańcza</h3>
+                </div>
+            </div>
+
+            <button class="slider-button next" aria-label="Następne produkty">›</button>
+        </div>
+    </section>
+
+    @*koreanskie produkty *@
+    <section class="product-section">
+        <div class="section-heading">
+            <h2>𐙚⋆°. Koreańskie owoce i warzywa 𐙚⋆°.</h2>
+            <span class="category-arrow" title="Cała kategoria – wkrótce">→</span>
+        </div>
+
+        <div class="slider-wrapper">
+            <button class="slider-button prev" aria-label="Poprzednie produkty">‹</button>
+
+            <div class="product-slider">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500" alt="Rzodkiew">
+                    <h3>Rzodkiew mu</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1568584711075-3d021a7c3ca3?w=500" alt="Kapusta pekińska">
+                    <h3>Kapusta pekińska</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=500" alt="Gruszka">
+                    <h3>Gruszka nashi</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500" alt="Warzywa">
+                    <h3>Warzywa</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=500" alt="Owoc">
+                    <h3>Owoce</h3>
+                </div>
+            </div>
+
+            <button class="slider-button next" aria-label="Następne produkty">›</button>
+        </div>
+    </section>
+
+    @* srodziemnomorskie produkty *@
+    <section class="product-section">
+        <div class="section-heading">
+            <h2>°‧ 𓆝 𓆟 𓆞 ·｡ Śródziemnomorskie owoce i warzywa °‧ 𓆝 𓆟 𓆞 ·｡</h2>
+            <span class="category-arrow" title="Cała kategoria – wkrótce">→</span>
+        </div>
+
+        <div class="slider-wrapper">
+            <button class="slider-button prev" aria-label="Poprzednie produkty">‹</button>
+
+            <div class="product-slider">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=500" alt="Cytryny">
+                    <h3>Cytryna</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1543168256-418811576931?w=500" alt="Winogrona">
+                    <h3>Winogrona</h3>
+                </div>
+                <div class="product-card">
+    				<img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=500" alt="Oliwki">
+    				<h3>Figi</h3>
+				</div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=500" alt="Oliwki">
+                    <h3>Oliwki</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=500" alt="Jabłka">
+                    <h3>Jabłko</h3>
+                </div>
+            </div>
+
+            <button class="slider-button next" aria-label="Następne produkty">›</button>
+        </div>
+    </section>
+
+    @* amerykańskie produkty *@
+    <section class="product-section">
+        <div class="section-heading">
+            <h2>౨ৎ⋆˚｡⋆ Amerykańskie owoce i warzywa ౨ৎ⋆˚｡⋆</h2>
+            <span class="category-arrow" title="Cała kategoria – wkrótce">→</span>
+        </div>
+
+        <div class="slider-wrapper">
+            <button class="slider-button prev" aria-label="Poprzednie produkty">‹</button>
+
+            <div class="product-slider">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590005354167-6da97870c757?w=500" alt="Borówki">
+                    <h3>Jagody</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=500" alt="Ananas">
+                    <h3>Ananas</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1547514701-42782101795e?w=500" alt="Pomarańcze">
+                    <h3>Pomarańcza</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=500" alt="Jabłka">
+                    <h3>Jabłko</h3>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1527325678964-54921661f888?w=500" alt="Awokado">
+                    <h3>Awokado</h3>
+                </div>
+            </div>
+
+            <button class="slider-button next" aria-label="Następne produkty">›</button>
+        </div>
+    </section>
+
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll(".image-switch").forEach(button => {
+            button.addEventListener("click", event => {
+                event.stopPropagation();
+
+                const card = button.closest(".product-card");
+                card.classList.toggle("show-second");
+            });
+        });
+        document.querySelectorAll(".slider-wrapper").forEach(wrapper => {
+            const slider = wrapper.querySelector(".product-slider");
+            const prev = wrapper.querySelector(".slider-button.prev");
+            const next = wrapper.querySelector(".slider-button.next");
+
+            prev.addEventListener("click", () => {
+                slider.scrollBy({ left: -slider.clientWidth * 0.8, behavior: "smooth" });
+            });
+
+            next.addEventListener("click", () => {
+                slider.scrollBy({ left: slider.clientWidth * 0.8, behavior: "smooth" });
+            });
+        });
+    </script>
+}

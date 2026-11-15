@@ -315,3 +315,10 @@ header .dropdown-menu .dropdown-item {
 .site-footer .visitor-counter {
     font-family: 'Libre Baskerville', serif;
 }
+
+/*ukrywanie ornamentow stopki na mniejszych ekranach */
+@media (max-width: 1100px) {
+    .site-footer::before {
+        display: none;
+    }
+}
