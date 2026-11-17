@@ -79,6 +79,31 @@
                             </a>
                         </li>
 
+                        <li>
+                            <a class="dropdown-item py-2"
+                               asp-controller="Products"
+                               asp-action="List">
+
+                                <i class="bi bi-basket me-2"></i>
+                                Produkty
+
+                            </a>
+                        </li>
+
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li>
+                                <a class="dropdown-item py-2"
+                                   asp-controller="Cart"
+                                   asp-action="ShowCart">
+
+                                    <i class="bi bi-cart me-2"></i>
+                                    Koszyk
+
+                                </a>
+                            </li>
+                        }
+
                     </ul>
 
                 </div>

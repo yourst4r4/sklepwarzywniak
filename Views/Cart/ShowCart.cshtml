@@ -1,0 +1,35 @@
+@model List<Warzywniak.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Koszyk";
+    var total = Model.Sum(item => item.Product.PriceNet * item.Quantity);
+}
+
+<div class="container py-4">
+    <h1>Twój koszyk</h1>
+
+    @if (Model.Count == 0)
+    {
+        <p>Koszyk jest pusty.</p>
+        <a asp-controller="Products" asp-action="List" class="btn btn-success">
+            Przejdź do produktów
+        </a>
+    }
+    else
+    {
+        <div class="list-group mb-3">
+            @foreach (var item in Model)
+            {
+                <div class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>@item.Product.Name</strong>
+                        <div>Ilość: @item.Quantity</div>
+                    </div>
+                    <span>@((item.Product.PriceNet * item.Quantity).ToString("0.00")) zł netto</span>
+                </div>
+            }
+        </div>
+
+        <h3>Suma: @total.ToString("0.00") zł netto</h3>
+    }
+</div>
