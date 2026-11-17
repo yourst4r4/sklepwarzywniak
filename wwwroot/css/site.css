@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
     --color-pink: #D3968C;
     --color-cream: #F7F4D5;
@@ -5,8 +7,6 @@
     --color-dark-green: #0A3323;
     --color-teal: #105666;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* body tlo*/
 
