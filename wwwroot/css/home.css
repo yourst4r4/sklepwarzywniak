@@ -249,3 +249,46 @@
     opacity: 0;
 }
 
+/* zakup produktu */
+.product-purchase {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: 'Libre Baskerville', serif;
+    color: var(--color-dark-green);
+}
+
+.product-purchase label {
+    font-size: 0.8rem;
+}
+
+.product-quantity {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid rgba(10, 51, 35, 0.3);
+    border-radius: 7px;
+    background-color: var(--color-cream);
+    color: var(--color-dark-green);
+    font-family: 'Libre Baskerville', serif;
+}
+
+.product-price {
+    margin: 3px 0;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    border: none;
+    border-radius: 8px;
+    padding: 9px;
+    background-color: var(--color-olive);
+    color: var(--color-cream);
+    font-family: 'Libre Baskerville', serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: var(--color-dark-green);
+}
